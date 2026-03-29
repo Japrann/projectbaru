@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header__title">
+          <span class="header__dot" aria-hidden="true"></span>
+          <h1>Private Chat</h1>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="autoReplyToggle" checked />
+          <span class="toggle__label">Auto-reply</span>
+        </label>
+      </header>
+
+      <main class="chat" id="chat" aria-live="polite" aria-relevant="additions"></main>
+
+      <div class="typing typing--hidden" id="typing" aria-hidden="true">
+        <span class="typing__dots"><span></span><span></span><span></span></span>
+        <span class="typing__text">typing...</span>
+      </div>
+
+      <footer class="composer">
+        <form id="form" class="composer__form" autocomplete="off">
+          <input
+            type="text"
+            id="input"
+            class="composer__input"
+            placeholder="Ketik pesan..."
+            maxlength="2000"
+            required
+          />
+          <button type="submit" class="composer__send">Kirim</button>
+        </form>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

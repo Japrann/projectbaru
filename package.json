@@ -1,0 +1,22 @@
+{
+  "name": "private-chat-webhook",
+  "version": "1.0.0",
+  "description": "Private chat with Discord webhook and optional auto-reply",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.14.0",
+    "cors": "^2.8.6",
+    "discord.js": "^14.25.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.22.1",
+    "node-fetch": "^2.7.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
