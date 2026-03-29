@@ -30,7 +30,7 @@ client.on("messageCreate", async (message) => {
     console.log("manual reply:", reply);
 
     try {
-      await axios.post("http://localhost:3000/admin-reply", {
+      await axios.post("https://projectbaru-production.up.railway.app//admin-reply", {
         message: reply
       });
 
